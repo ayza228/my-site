@@ -21,6 +21,9 @@ def reading(request):
 def calligraphy(request):
     return render(request, 'articles/calligraphy.html')
 
+def triallesson(request):
+    return render(request, 'articles/triallesson.html')
+
 
 
 class LessonView(View):
