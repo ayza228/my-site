@@ -8,6 +8,7 @@ urlpatterns = [
     path("speedreading/", views.speedreading, name='speedreading'),
     path("reading/", views.reading, name='reading'),
     path("calligraphy/", views.calligraphy, name='calligraphy'),
+    path("triallesson/", views.triallesson, name='triallesson'),
     path("main/", views.LessonView.as_view()),
     path("<slug:slug>/", views.LessonDetailView.as_view(), name="lesson_detail"),
     path("trial/<int:pk>/", views.AddTrial.as_view(), name='add_trial'),
